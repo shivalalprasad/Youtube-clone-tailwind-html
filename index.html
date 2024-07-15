@@ -11,16 +11,23 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      *{
-        margin: 0;padding: 0;box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body class="bg-[#0f0f0f] text-white">
     <!-- header starts -->
-    <header id="header" class="flex px-2 mt-1 h-12 justify-between items-center">
-      <div class="flex  pl-2 gap-7">
-        <div class="h-10 py-2 px-2 rounded-full hover:bg-[#222222] fill-[#fff] cursor-pointer">
+    <header
+      id="header"
+      class="flex px-2 mt-1 h-12 justify-between items-center"
+    >
+      <div class="flex pl-2 gap-7">
+        <div
+          class="h-10 py-2 px-2 rounded-full hover:bg-[#222222] fill-[#fff] cursor-pointer"
+        >
           <!-- hamberger memu logo -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -101,63 +108,884 @@
         </div>
       </div>
 
-      <div id="search" class="flex fill-[#fff] w-[70%] justify-center ">
-            <div class="w-[50%]">
-              <!--search bar  -->
-               <input class=" h-10 bg-[#121212] border rounded-l-3xl border-gray-500 body-[#161616] shadow-[inset 0 1px 2px #121212] w-full  " type="text" name="search" id="search" placeholder="&nbsp; &nbsp; Search"> 
-            </div>
-            <!-- search logo -->
-            <div id="search" class="bg-[#222222] px-4 rounded-r-3xl border border-gray-500 shadow-[inset 0 1px 2px #121212] cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
-            </div>
-            <!-- mic logo -->
-            <div id="mic" class="mx-5 bg-[#222222] px-2 rounded-full border border-gray-500 shadow-[inset 0 1px 2px #121212] cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
-            </div>
+      <div id="search" class="flex fill-[#fff] w-[70%] justify-center">
+        <div class="w-[50%]">
+          <!--search bar  -->
+          <input
+            class="h-10 bg-[#121212] border rounded-l-3xl border-gray-500 body-[#161616] shadow-[inset 0 1px 2px #121212] w-full"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="&nbsp; &nbsp; Search"
+          />
+        </div>
+        <!-- search logo -->
+        <div
+          id="search"
+          class="bg-[#222222] px-4 rounded-r-3xl border border-gray-500 shadow-[inset 0 1px 2px #121212] cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#fff"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <path
+              clip-rule="evenodd"
+              d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <!-- mic logo -->
+        <div
+          id="mic"
+          class="mx-5 bg-[#222222] px-2 rounded-full border border-gray-500 shadow-[inset 0 1px 2px #121212] cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <path
+              d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"
+            ></path>
+          </svg>
+        </div>
       </div>
       <div id="account" class="flex gap-4 cursor-pointer">
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#fff"
+            enable-background="new 0 0 24 24"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <path
+              d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+            ></path>
+          </svg>
         </div>
-        <div class="flex fill-[#2c6da5] text-[#2c6da5] bg-[#121212] px-3 py-1 gap-1 rounded-full border border-gray-500 body-[#161616] shadow-[inset 0 1px 2px #121212] cursor-pointer hover:bg-[#263850]">
+        <div
+          class="flex fill-[#2c6da5] text-[#2c6da5] bg-[#121212] px-3 py-1 gap-1 rounded-full border border-gray-500 body-[#161616] shadow-[inset 0 1px 2px #121212] cursor-pointer hover:bg-[#263850]"
+        >
           <!-- account logo -->
-          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit "><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            style="pointer-events: none; display: inherit"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z"
+            ></path>
+          </svg>
           <div class="font-extrabold">Sign in</div>
         </div>
       </div>
     </header>
+    <div id="main" class="flex gap-4">
       <!-- side bar starts here -->
-       <aside id="side-bar" class="flex flex-col mx-1 w-16">
-        <div class=" flex flex-col pb-3  rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out" title="Home">
+      <aside id="side-bar" class="flex flex-col mx-1 w-16">
+        <div
+          class="flex flex-col pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out"
+          title="Home"
+        >
           <div id="wrap" class="px-5 py-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-[1.6rem]" enable-background="new 0 0 24 24" height="24" fill="#fff" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-[1.6rem]"
+              enable-background="new 0 0 24 24"
+              height="24"
+              fill="#fff"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: inherit"
+            >
+              <g>
+                <path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+              </g>
+            </svg>
           </div>
           <span class="text-[.65rem] text-center">Home</span>
         </div>
-        <div class=" flex flex-col  pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out" title="Shorts">
+        <div
+          class="flex flex-col pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out"
+          title="Shorts"
+        >
           <div id="wrap" class="px-5 py-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit;"><path fill="#fff" d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: inherit"
+            >
+              <path
+                fill="#fff"
+                d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"
+              ></path>
+            </svg>
           </div>
           <span class="text-[.65rem] text-center">Shorts</span>
         </div>
-        <div class="flex flex-col rounded-2xl hover:bg-[#2d2d2d] cursor-pointer  pb-3 transition-all duration-300 ease-in-out" title="Subscriptions">
+        <div
+          class="flex flex-col rounded-2xl hover:bg-[#2d2d2d] cursor-pointer pb-3 transition-all duration-300 ease-in-out"
+          title="Subscriptions"
+        >
           <div id="wrap" class="px-5 py-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit;"><path fill="#fff" d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: inherit"
+            >
+              <path
+                fill="#fff"
+                d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"
+              ></path>
+            </svg>
           </div>
           <span class="text-[.65rem] text-center">Subscriptions</span>
         </div>
-        <div class="flex flex-col  pb-3  rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out" title="You">
+        <div
+          class="flex flex-col pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out"
+          title="You"
+        >
           <div id="wrap" class="px-5 py-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: inherit;"><path fill="#fff" d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="pointer-events: none; display: inherit"
+            >
+              <path
+                fill="#fff"
+                d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"
+              ></path>
+            </svg>
           </div>
           <span class="text-[.65rem] text-center">You</span>
         </div>
-        <div class=" flex flex-col pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out" title="History">
+        <div
+          class="flex flex-col pb-3 rounded-2xl hover:bg-[#2d2d2d] cursor-pointer transition-all duration-300 ease-in-out"
+          title="History"
+        >
           <div id="wrap" class="px-5 py-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: inherit;" viewBox="0 0 24 24" width="24" focusable="false"><g><path fill="#fff" d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"></path></g></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              style="pointer-events: none; display: inherit"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+            >
+              <g>
+                <path
+                  fill="#fff"
+                  d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM22 12c0 5.51-4.49 10-10 10S2 17.51 2 12h1c0 4.96 4.04 9 9 9s9-4.04 9-9-4.04-9-9-9C8.81 3 5.92 4.64 4.28 7.38c-.11.18-.22.37-.31.56L3.94 8H8v1H1.96V3h1v4.74c.04-.09.07-.17.11-.25.11-.22.23-.42.35-.63C5.22 3.86 8.51 2 12 2c5.51 0 10 4.49 10 10z"
+                ></path>
+              </g>
+            </svg>
           </div>
           <span class="text-[.65rem] text-center">History</span>
         </div>
-       </aside>
+      </aside>
+      <div>
+        <div id="intrest-keywords"><ul class="flex items-center my-8 gap-2 overflow-x-hidden text-[0.9rem] font-medium">
+          <li class="bg-[#f1f1f1] text-black px-3 py-1 rounded-lg">All</li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Youtube Clone
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Web Development
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            HTML
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            CSS
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            JavaScript
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            JS Loops
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            JS Arrays
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            React JS
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Next JS
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Mango DB
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Mangose
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Music
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            News
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Gaming
+          </li>
+          <li class="bg-[#272727] px-3 py-1 rounded-lg cursor-pointer hover:bg-[#e5e5e5] hover:text-black transition-all duration-300 ease-in-out">
+            Animation
+          </li>
+        </ul> </div>
+        <div id="videos" class="mt-4 grid gap-4 grid-cols-4">
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube-nocookie.com/embed/6Nl1Fb-gLyU?si=0TCXDQtTkttsCrrG&amp;start=9"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/5f11ukgHGD_w9lltcPLIwzC_p8iyUmENZu0dFEhBqfUXP8ZgKgJVRnAL0kPRat5ozCEYqiEQnYs=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Why To Choose Full Stack Web Development ? Complete Roadm...
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  PW Skills Tech
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">7.8M views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">1 week ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/pTpQ0DazubA?si=ZIUQC0aCCb9EIxeC"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/5f11ukgHGD_w9lltcPLIwzC_p8iyUmENZu0dFEhBqfUXP8ZgKgJVRnAL0kPRat5ozCEYqiEQnYs=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  HTML Structure | Web Development Tutorial For begine...
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  PW Skills Tech
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">7.8M views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">1 week ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/LeHdBkdolBg?si=wlzE68RLr-kyINfv"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/4jUKl9l95aGK6KhaS-ca-NGL8PCj8XCFJ4gIPzDOtAVF8ICwx1HB8-Z0QfrABjw9mzVs8g9IRQ=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Introduction to JavaScript | JavaScript Lecture 1
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  College Wallah
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">74K views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">1 year ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/3093X2pgpJw?si=pTv_dAeS01qprEWv"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/4jUKl9l95aGK6KhaS-ca-NGL8PCj8XCFJ4gIPzDOtAVF8ICwx1HB8-Z0QfrABjw9mzVs8g9IRQ=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Understanding JavaScript Loops | JavaScript Lecture 04
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  College Wallah
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">12K views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">1 year ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/4jBl6utVTBg?si=LWgKF-hbIN8RsbnH"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/4jUKl9l95aGK6KhaS-ca-NGL8PCj8XCFJ4gIPzDOtAVF8ICwx1HB8-Z0QfrABjw9mzVs8g9IRQ=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Exploring JavaScript Arrays | JavaScript Lecture 05
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  PW Skills Tech
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">12K views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">1 year ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/eiGdsH1g20k?si=IBaciky8Dl2oqmAB"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/1Sk_k49zb487KUd_V2OEkNOsFrN4iynVSFaymp1stDG5SObByyOf4Y8RQI7waJN2mASJUzKHSg=s88-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Vidya Vox - Be Free (Pallivaalu Bhadravattakam) ft. Vandana
+                  ...
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  Vidya Vox
+                  <div title="verified" class="flex">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      enable-background="new 0 0 24 24"
+                      class="w-4 ml-1"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7z"
+                      ></path>
+                    </svg>
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">800K views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">6 months ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/LbduRJOJLoU?si=PkmPtVBGnp853cmo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/tokv0pq1n8Rr-5yaT4wNrI1tcpyMW8XGMA9eWdMBnGV1A7yMKqSYRtBQhy3wwoTfuWUW0qupZGc=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Trump Assassination Attempt In Pennsylvania Rally Shocked ...
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  MIRROR NOW
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4 ml-1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">25k views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">8 hours ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="video" class="mb-4">
+            <div id="vid-frame">
+              <iframe
+                class="rounded-2xl"
+                width="100%"
+                height="180"
+                src="https://www.youtube.com/embed/ErMSHiQRnc8?si=IwkiN7KbrhrPzkzx"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div id="vid-info" class="flex mt-2 cursor-pointer">
+              <div id="channel-logo">
+                <img
+                  width="35"
+                  class="rounded-[50%] block mx-auto"
+                  src="https://yt3.ggpht.com/ytc/AIdro_lwPo3gastfnVlWoPgE4cnwqGk8cZbGt645WCAKVZ8xbL4=s68-c-k-c0x00ffffff-no-rj"
+                  alt="channel-logo"
+                />
+              </div>
+              <div id="video-title" class="ml-2 w-[80%]">
+                <div id="title" class="text-lg leading-5">
+                  Animation vs. Physics
+                </div>
+                <div
+                  id="channel-name"
+                  class="font-extralight mt-1 text-[#aaa] flex"
+                >
+                  Alan Becker
+                  <div title="verified">
+                    <svg
+                      title="verified"
+                      class="w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      focusable="false"
+                      style="pointer-events: none; display: inherit"
+                    >
+                      <path
+                        fill="#aaa"
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div id="time" class="font-extralight text-[#aaa]">
+                  <span id="views" class="text-sm">25M views </span>
+                  <sup class="font-extrabold text-xl m-1 top-[-0.2rem]">.</sup>
+                  <span id="uploadedAt" class="text-sm">7 months ago</span>
+                </div>
+              </div>
+              <div id="video-options" class="w-8 mx-auto">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#fff"
+                  enable-background="new 0 0 24 24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  focusable="false"
+                  style="pointer-events: none; display: inherit"
+                >
+                  <path
+                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
